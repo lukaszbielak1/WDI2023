@@ -1,0 +1,12 @@
+[
+    {
+        "domain": "test_domain",
+        "table_name": "test_table",
+        "file_path": "abfss://container@storageaccount.dfs.core.windows.net/files_to_load"
+    },
+    {
+        "domain": "test_domain1",
+        "table_name": "test_table1",
+        "file_path": "abfss://container@storageaccount.dfs.core.windows.net/files_to_load"
+    }
+]

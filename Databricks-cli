@@ -1,0 +1,5 @@
+pip install databricks-cli
+databricks configure --token
+apt-get install -y jq
+databricks jobs list --output json | jq '.jobs[] | select(.settings.name | startswith("prefix")) | .job_id' 
+databricks jobs list --output json | jq '.jobs[] | select(.settings.name | startswith("prefix")) | .job_id' | xargs -n 1 databricks jobs delete --job-id
